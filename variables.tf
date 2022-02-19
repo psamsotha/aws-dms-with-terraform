@@ -28,7 +28,29 @@ variable "rds_source_instance_class" {
 }
 
 variable "rds_source_publicly_accessible" {
-  type = bool
-  default = false
+  type        = bool
+  default     = false
+  description = "whether db is publicly accessible"
+}
+
+variable "rds_target_username" {
+  type        = string
+  description = "username for DB"
+}
+
+variable "rds_target_password" {
+  type        = string
+  description = "password for DB"
+}
+
+variable "rds_target_instance_class" {
+  type        = string
+  default     = "db.m5.large"
+  description = "instance class for DB"
+}
+
+variable "rds_target_publicly_accessible" {
+  type        = bool
+  default     = false
   description = "whether db is publicly accessible"
 }
