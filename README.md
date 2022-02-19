@@ -12,7 +12,7 @@
 
 * [Create a VPC](./modules/vpc/README.md)
 * [Create Amazon RDS parameter groups](./modules/rds-parameter-groups/README.md)
-* Create your source Amazon RDS database
+* [Create your source Amazon RDS database](./modules/rds-source-db/README.md)
 * Create your target Amazon RDS database
 * Create an Amazon EC2 client
 * Populate your source database

@@ -9,3 +9,8 @@ To specify settings for your source and target databases for AWS DMS, use Amazon
 
 * `aws_db_parameter_group.mysql_params` - parameter group for MySQL source database
 * `aws_db_parameter_group.postgres_params` - parameter group for Postgres target database
+
+## Outputs
+
+* `mysql_param_group` - parameter group name for MySQL
+* `postgrest_param_group` - parameter group name for Postgres

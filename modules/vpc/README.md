@@ -14,5 +14,6 @@ Using a VPC for your tutorial resources also ensures that you delete all of the 
 
 * `db_security_group_id` - default security group ID (for database access)
 * `vpc_id` - ID of VPC
-* `public_subnet_id` - ID of public subnet
-* `private_subnet_id` - ID of private subnet
+* `public_subnet_ids` - IDs of public subnets
+* `private_subnet_ids` - IDs of private subnets
+* `azs` - VPC availability zones
