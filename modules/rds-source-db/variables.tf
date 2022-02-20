@@ -47,3 +47,8 @@ variable "db_az" {
   type        = string
   description = "availability zone for DB"
 }
+
+variable "db_subnet_group_name" {
+  type        = string
+  description = "name of the DB subnet group"
+}

@@ -29,3 +29,8 @@ resource "aws_security_group_rule" "postgres_inbound" {
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = module.vpc.default_security_group_id
 }
+
+resource "aws_db_subnet_group" "rds_subnet_group" {
+  name       = "dms-rds-subnet-group"
+  subnet_ids = var.dbs_publicly_accessible ? module.vpc.private_subnets : module.vpc.public_subnets
+}

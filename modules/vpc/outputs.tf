@@ -1,5 +1,5 @@
 
-output "db_security_group_id" {
+output "default_security_group_id" {
   value = module.vpc.default_security_group_id
 }
 
@@ -17,4 +17,8 @@ output "private_subnet_ids" {
 
 output "azs" {
   value = module.vpc.azs
+}
+
+output "db_subnet_group_name" {
+  value = aws_db_subnet_group.rds_subnet_group.name
 }

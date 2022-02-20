@@ -27,12 +27,6 @@ variable "rds_source_instance_class" {
   description = "instance class for DB"
 }
 
-variable "rds_source_publicly_accessible" {
-  type        = bool
-  default     = false
-  description = "whether db is publicly accessible"
-}
-
 variable "rds_target_username" {
   type        = string
   description = "username for DB"
@@ -49,8 +43,18 @@ variable "rds_target_instance_class" {
   description = "instance class for DB"
 }
 
-variable "rds_target_publicly_accessible" {
+variable "dbs_publicly_accessible" {
   type        = bool
   default     = false
-  description = "whether db is publicly accessible"
+  description = "whether dbs are publicly accessible"
+}
+
+variable "ec2_client_ssh_ip" {
+  type        = string
+  description = "Your IP to allow for SSH access"
+}
+
+variable "ec2_client_key_pair_name" {
+  type        = string
+  description = "key pair name for SSH access"
 }
